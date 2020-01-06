@@ -47,7 +47,7 @@ public Plugin myinfo =
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
 {
-	g_bCsgo = (GetEngineVersion() == Engine_CSGO || GetEngineVersion() == Engine_Left4Dead || GetEngineVersion() == Engine_Left4Dead2);
+	g_bCsgo = (GetEngineVersion() == Engine_CSGO);
 	
 	CreateNative("IsClientSpeaking", Native_IsClientTalking);
 	RegPluginLibrary("voiceannounce_ex");
